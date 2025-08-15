@@ -1,13 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --background-color: linear-gradient(
+    135deg,(skyblue, #87ceeb)
+  );
+  --text-color: #333;
+  --border-color: #e0e0e0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
+  background:  linear-gradient(
+    105deg, #E6F4FF, #8ACEFF);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+p {
+  color: #5f6c7b;
+}
+h1{
+  font-size: 3rem;
+  color: #4a90e2;
+  text-align: center;
+  font-weight: 800;
+}
+h2 {
+  font-size: 2rem;
+  color: #5f6c7b;
+  font-weight: 700;
+  text-align: center;
+}
+.container h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.app{
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color:#e0e0e0;
+}
+.search-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.search-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.search-options button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #e0f7fa;
+  color: #0a3d62;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.search-options button.active {
+  background: #4a90e2;
+  color: white;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.search-options button:hover {
+  background: #50e3c2;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.search input {
+  width: 300px;
+  padding: 12px 20px;
+  border: 2px solid #4a90e2;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: #4a90e2;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: lightskyblue 0px 0px 10px;
+}
+.search input:focus {
+  outline: none;
+  border-color: orange;
+  box-shadow: 0 2px 15px rgba(80, 227, 194, 0.4);
+}
+::placeholder {
+  color: #4a90e2;
+}
+.weather-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.weather-icon-container{
+  width: 200px;
+  height: 200px;
+}
+.error {
+  color: #c62828;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.loading{
+  color: #4a90e2;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.description{
+  margin-top: -20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.container {
+  max-width: 500px;
+  max-height: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(
+    105deg, #E6F4FF, #e0e0e0);
+  border-radius: 20px;
+  border: seashell 2px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+.temp {
+  font-size: 5rem;
+  color: #4a90e2;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+.feels{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.wind{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.humidity{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer{
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  bottom: 0;
+  width: 100%;
+}
+.reserved_right{
+  text-align: center;
+  font-size: 1rem;
+  color: #5f6c7b;
+  margin-top: 20px;
 }
