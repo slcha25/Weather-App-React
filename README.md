@@ -33,6 +33,7 @@ A responsive weather application built with React that provides real-time weathe
       -  Geolocation endpoint for automatic detection 
     - Axios for API requests
 
+## 🚀 Getting Started
 In the project directory, you can run:
 
 ### `npm start`
