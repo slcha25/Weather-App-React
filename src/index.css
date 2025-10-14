@@ -160,6 +160,8 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  /* adjust the bottom with container */
+  margin-top: -20px;
 }
 .footer{
   text-align: center;
